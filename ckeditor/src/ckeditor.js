@@ -14,10 +14,14 @@ import Indent from '@ckeditor/ckeditor5-indent/src/indent';
 import List from '@ckeditor/ckeditor5-list/src/list';
 import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph';
 import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefromoffice';
+import Placeholder from "./placeholder/placeholder";
+import FontFamily from "@ckeditor/ckeditor5-font/src/fontfamily";
+import FontSize from "@ckeditor/ckeditor5-font/src/fontsize";
+import FontColor from "@ckeditor/ckeditor5-font/src/fontcolor";
+import Alignment from "@ckeditor/ckeditor5-alignment/src/alignment";
 
 import Context from '@ckeditor/ckeditor5-core/src/context';
 import ContextWatchdog from '@ckeditor/ckeditor5-watchdog/src/contextwatchdog';
-import Placeholder from "./placeholder/placeholder";
 
 class ClassicEditor extends ClassicEditorBase {
 }
@@ -32,20 +36,33 @@ ClassicEditor.builtinPlugins = [
   List,
   Paragraph,
   PasteFromOffice,
-  Placeholder
+  Placeholder,
+  FontFamily,
+  FontSize,
+  FontColor,
+  Alignment
 ];
 
 // Editor configuration.
 ClassicEditor.defaultConfig = {
   toolbar: {
     items: [
-      'bold',
-      'italic',
-      'indent',
-      'outdent',
-      'bulletedList',
-      'numberedList',
-      'placeholder'
+      'fontFamily', 'fontSize', 'fontColor',
+      '|', 'alignment:left', 'alignment:center', 'alignment:right', 'alignment:justify',
+      '|', 'bold', 'italic',
+      '|', 'indent', 'outdent',
+      '|', 'bulletedList', 'numberedList',
+      '|', 'placeholder'
+    ]
+  },
+  fontSize: {
+    options: [
+      8,
+      10,
+      12,
+      14,
+      16,
+      18
     ]
   },
   // This value must be kept in sync with the language defined in webpack.config.js.

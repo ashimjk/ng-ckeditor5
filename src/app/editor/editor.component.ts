@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 
 import * as CKSource from '../../../ckeditor/build/cksource';
+import {ChangeEvent} from "@ckeditor/ckeditor5-angular";
 
 const ClassicEditor = CKSource.ClassicEditor;
 
@@ -15,6 +16,7 @@ const ClassicEditor = CKSource.ClassicEditor;
       [editor]="Editor"
       [config]="config"
       id="classic-editor"
+      (change)="onChange($event)"
     >
     </ckeditor>
 
@@ -39,4 +41,7 @@ export class EditorComponent implements OnInit {
   ngOnInit() {
   }
 
+  onChange(event: ChangeEvent) {
+    console.log(event.editor.getData());
+  }
 }
