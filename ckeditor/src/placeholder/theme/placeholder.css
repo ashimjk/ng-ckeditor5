@@ -1,0 +1,23 @@
+.placeholder {
+  border: 1px solid #F5C67B;
+  background: #F9F4D8;
+  padding: 4px 2px;
+  outline-offset: -2px;
+  margin: 0 1px;
+  font-family: Regular, Roboto, serif;
+  font-size: 14px;
+}
+
+.placeholder::selection {
+  display: none;
+}
+
+.ck-editor__editable.ck-blurred .ck-widget.ck-widget_selected, .ck-editor__editable.ck-blurred .ck-widget.ck-widget_selected:hover {
+  border-width: 2px;
+  outline-color: #F5C67B;
+}
+
+.ck .ck-widget.ck-widget_selected, .ck .ck-widget.ck-widget_selected:hover {
+  border-width: 2px;
+  outline-color: #F5C67B;
+}
