@@ -1,8 +1,11 @@
 {
-  "name": "ckeditor-plain",
+  "name": "@corpay/ckeditor5",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./build/ckeditor.js",
+  "files": [
+    "build"
+  ],
   "scripts": {
     "build": "webpack --mode production",
     "watch": "webpack --mode development -w",

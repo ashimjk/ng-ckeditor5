@@ -26,3 +26,7 @@
   max-height: 160px;
   overflow-y: auto;
 }
+
+.ck-content {
+  min-height: 200px;
+}
