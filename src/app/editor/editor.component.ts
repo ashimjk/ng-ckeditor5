@@ -31,7 +31,7 @@ export class EditorComponent implements OnInit {
     // toolbar: ['heading', '|', 'bold', 'italic', 'placeholder'],
     placeholderConfig: {
       name: 'Insert Variable',
-      types: ['firstName', 'surname', 'lastName']
+      types: ['firstName', 'surname', 'lastName', 'firstName', 'surname', 'lastName', 'firstName', 'surname', 'lastName']
     }
   };
 

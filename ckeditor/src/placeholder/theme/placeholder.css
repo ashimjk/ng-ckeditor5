@@ -21,3 +21,8 @@
   border-width: 2px;
   outline-color: #F5C67B;
 }
+
+.ck.ck-dropdown .ck-dropdown__panel.ck-dropdown__panel_ne, .ck.ck-dropdown .ck-dropdown__panel.ck-dropdown__panel_se {
+  max-height: 160px;
+  overflow-y: auto;
+}
