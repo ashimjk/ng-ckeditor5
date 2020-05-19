@@ -48,7 +48,7 @@ export default class PlaceholderEditing extends Plugin {
         classes: ['placeholder']
       },
       model: (viewElement, modelWriter) => {
-        const name = viewElement.getChild(0).data.slice(1);
+        const name = viewElement.getChild( 0 ).data.slice(2, -1 );
         return modelWriter.createElement('placeholder', {name});
       }
     });
@@ -73,7 +73,7 @@ export default class PlaceholderEditing extends Plugin {
         class: 'placeholder'
       });
 
-      const innerText = viewWriter.createText('$' + name);
+      const innerText = viewWriter.createText('${' + name + '}');
       viewWriter.insert(viewWriter.createPositionAt(placeholderView, 0), innerText);
 
       return placeholderView;
