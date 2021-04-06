@@ -30,7 +30,7 @@
     "@ckeditor/ckeditor5-alignment": "^17.0.0",
     "@ckeditor/ckeditor5-paste-from-office": "^17.0.0",
     "@ckeditor/ckeditor5-theme-lark": "^17.0.0",
-    "@ckeditor/ckeditor5-widget": "^17.0.0",
+    "@ckeditor/ckeditor5-widget": "^27.0.0",
     "@ckeditor/ckeditor5-watchdog": "^17.0.0",
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11",
